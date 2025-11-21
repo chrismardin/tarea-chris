@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atributos HTML</title>
+</head>
+
+<body>
+  <hr>
+
+  <header>
+    <table>
+      <tr>
+        <td style="width: 10%;">
+          <figure><img src="/images/logo.png" alt="Logo" width="120"></figure>
+        </td>
+
+        <td style="text-align: left;">
+          <a href="../index.html">Inicio</a> &emsp;&emsp;
+          <a href="/Html/etiquetas.html">Etiquetas</a>&emsp;&emsp;
+          <a href="/Html/atributos.html">Atributos</a>&emsp;&emsp;
+          <a href="/Html/css.html">CSS</a> &emsp;&emsp;
+          <a href="/Html/javascript.html">JavaScript</a>
+        </td>
+
+        <td style="text-align: right; width: 11%;">
+          <a href="/Html/contacto.html">Contacto</a>&emsp; &emsp;
+          <a href="/Html/acercade.html">Acerca de</a>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <section>
+
+      <h1>Atributos HTML</h1>
+
+      <article>
+        <h2>Enlaces rapidos</h2>
+
+        <ol>
+          <li>
+            <a href="#atributos_globales">Atributos globales</a>
+            <ul>
+              <li><a href="#1.1">1.1</a></li>
+              <li><a href="#1.2">1.2</a></li>
+              <li><a href="#1.3">1.3</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#atributos_form">Atributos form</a>
+            <ul>
+              <li><a href="#2.1">2.1</a></li>
+              <li><a href="#2.2">2.2</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#3">Atributos input</a>
+          </li>
+        </ol>
+      </article>
+
+
+
+
+      <hr>
+
+
+
+
+      <h2 id="atributos_globales">Atributos globales</h2>
+
+      <article>
+        <figure style="float: right;"> <img src="/images/imagen-atributo.png" alt="Imagen-atributos" width="150">
+        </figure>
+
+        <h3 id="1.1">1.1</h3>
+
+        <p>
+          <b>id (Identificador Único):</b><br>
+          Asigna un identificador único al elemento. 
+          Regla: Solo debe haber un elemento con un id específico por página. 
+          Uso: Se utiliza para apuntar a elementos desde CSS (#) o JavaScript.
+        </p>
+
+
+        <p>
+          <b>class (Clases de Estilo):</b><br>
+          Asigna uno o más nombres de clase al elemento.
+          Regla: Puede haber múltiples elementos con la misma clase.
+          Uso: Selecciona grupos desde CSS (.) o JavaScript.
+        </p>
+      </article>
+
+
+
+
+
+
+
+      <hr>
+
+
+      <article>
+
+        <h3 id="1.2">1.2</h3>
+        <figure style="float: right;"> <img src="/images/imagen-atributo.png" alt="Imagen-atributos" width="150">
+        </figure>
+        <p>
+          <b>style (Estilos en línea):</b><br>
+          Permite aplicar estilos directamente al elemento usando propiedades CSS.
+          Regla: Úsalo solo para pruebas rápidas.
+          Uso: style="color: red;".
+        </p>
+
+
+
+        <h3 id="1.3">1.3</h3>
+        <p>
+          <b>title (Información adicional):</b><br>
+          Agrega un texto que aparece al pasar el cursor sobre el elemento.
+          Regla: Solo muestra texto simple.
+          Uso: title="Información".
+        </p>
+        <hr>
+
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+
+      <article>
+        <h2 id="atributos_form">Atributos del formulario (form)</h2>
+        <figure style="float: right;"> <img src="/images/imagen-atributo2.png" alt="Imagen-atributos" width="150">
+        </figure>
+
+        <h3 id="2.1">2.1</h3>
+
+        <p>
+          <b>action (Destino del formulario):</b><br>
+          Indica la URL del servidor donde se enviarán los datos.<br>
+          Regla: Debe ser una ruta válida.<br>
+          Uso: &lt;form action="procesar.php"&gt;.
+        </p>
+      </article>
+
+
+
+
+      <article>
+        <hr>
+        <h3 id="2.2">2.2</h3>
+        <figure style="float: right;"> <img src="/images/imagen-atributo2.png" alt="Imagen-atributos" width="150">
+        </figure>
+        <p>
+          <b>method (Método de envío):</b><br>
+          Define cómo se enviarán los datos.<br><br>
+          <b>Métodos:</b><br>
+          • GET → datos visibles en la URL.<br>
+          • POST → datos ocultos.<br><br>
+          Regla: Para datos sensibles usar POST.
+        </p>
+        <hr>
+      </article>
+
+
+
+
+
+        <figure style="float: right;"> <img src="/images/imagen-atributo3.jpeg" alt="Imagen-atributos" width="150">
+        </figure>
+
+        <h2 id="3">Atributos de input</h2>
+
+        <p>1. type Define el tipo de campo.
+          Ejemplos: <br><br>
+          &lt;input type="text"&gt;
+          &lt;input type="number"&gt;
+          &lt;input type="email"&gt;</p><br>
+
+        <p>2. name Nombre que recibe el servidor al enviar el formulario.
+          Ejemplo: <br><br>
+          &lt;input type="text" name="usuario"&gt;</p><br>
+        <figure style="float: right;"> <img src="/images/imagen-atributo3.jpeg" alt="Imagen-atributos" width="150">
+        </figure>
+        <p>3. placeholder
+
+          Texto gris que aparece como guía.
+          Ejemplo: <br><br>
+          &lt;input type="text" placeholder="Escribe tu nombre"&gt;</p><br>
+
+        <p>4. value
+          Valor por defecto.
+          Ejemplo: <br><br>
+          &lt;input type="text" value="Hola"&gt;</p><br>
+
+
+      </section>
+
+
+  </main>
+
+  <footer>
+    footer
+  </footer>
+
+</body>
+
+</html>
