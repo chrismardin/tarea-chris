@@ -110,6 +110,12 @@ button {
 
 
     }
+    button{
+        display: block;
+    margin: 10px auto;
+      
+    }
+   
 
     article img {
 
